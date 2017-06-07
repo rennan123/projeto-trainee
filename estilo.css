@@ -5,7 +5,7 @@ html, body, .capa {
 }
 
 body {
-	background: linear-gradient: #FFFFFF
+	background: linear-gradient: #FFFFFF;
 	background-attachment: fixed;
 	background-position: center;
     background-size: 100% 100%;
@@ -26,7 +26,7 @@ body {
 
 nav.navbar-transparente {
 	padding: 10px 0px;
-	background: rgba(#F5F5F5, #FFFFFF, #FFFFFF, 0.6);
+	background: rgba(#FFFFFF, #FFFFFF, #FFFFFF, 0.6);
 	border: none;
 }
 
@@ -70,21 +70,35 @@ h1 {
 
 h1, h2, h3, h4, h5 {
     font-weight: 700;
-    color: #505050;
+    color: #424242;
 }
 
 h4 {
-	font-size: 28px;
-	font-weight: 400;
+    font-size: 28px;
+    font-weight: 400;
 }
 
 h4 {
-    display: block;
+     display: block;
     -webkit-margin-before: 1.33em;
     -webkit-margin-after: 1.33em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    font-weight: bold;
+}
+
+h3, h4 {
+    letter-spacing: -1px;
+    line-height: 40px;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about {
+    min-height: 62vh;
+    margin-top: 20px;
 }
 
 .texto-capa {
@@ -94,33 +108,7 @@ h4 {
 	vertical-align: middle;
 }
 
-/* -- Botoes -- */
-.btn-custom {
-	color: white;
-	border-radius: 500px;
-	-webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    text-transform: uppercase;
-    transition: background 0.4s, color 0.4s;
-}
-
-.btn-roxo {
-	background: #7c25f8;
-}
-.btn-roxo:hover {
-	background-color: #6207e3;
-	color: white;
-}
-
-.btn-branco {
-	border: 2px solid white;
-}
-.btn-branco:hover {
-	background-color: white;
-	color: black;
-}
-
-/* -- secao servico -- */
+/* -- secao sobre -- */
 #sobre {
 	background: white;
 	padding-top: 20px;
@@ -144,7 +132,7 @@ h4 {
 
 /* -- rodape -- */
 footer {
-	background: #000;
+	background: #FFF;
 	padding: 50px 0px 20px 0px;
 }
 
@@ -152,27 +140,18 @@ footer {
 	float: right;
 }
 
-.footer-iconImg {
+.footer-iconImg:hover {
     opacity: .8;
     transition: opacity .2s;
 }
 
 /* ========================= Tipografia ======================== */
 
-section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-}
-
 h1 {
 	font-weight: 900;
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
-	color: #505050;
+	color: #424242;
 }
 
 /* Media queries */
@@ -219,13 +198,13 @@ h3{
 }
 
 #rodape h4 {
-	color: #919496;
+	color: #000;
 	font-size: 12px;
 	text-transform: uppercase;
 }
 
 #sobre h2, #sobre h3 {
-	color: #7c25f8;
+	color: #424242;
 }
 
 #qualificacoes h3 {
