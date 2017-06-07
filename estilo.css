@@ -26,23 +26,15 @@ body {
 
 nav.navbar-transparente {
 	padding: 10px 0px;
-	background: rgba(#FFFFFF, #FFFFFF, #FFFFFF, 0.6);
-	border: none;
+	background: rgba(246, 239, 247, 0.6);
 }
 
 .navbar-brand{
 	padding: 10px 15px;
 }
 
-.divisor{
-	width: 1px;
-	height: 16px;
-	background: white;
-	margin: 16px 10px;
-}
-
 .navbar-inverse .navbar-nav>li>a, footer .nav a {
-	color: white;
+	color: black;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
@@ -97,7 +89,7 @@ h3, h4 {
 }
 
 .about {
-    min-height: 62vh;
+    min-height: 70vh;
     margin-top: 20px;
 }
 
@@ -106,6 +98,18 @@ h3, h4 {
 	color: black;
 	display: table-cell;
 	vertical-align: middle;
+}
+.texto {
+	padding-top: 50px;
+	text-align: center;
+	color: black;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.foto {
+	vertical-align: middle;
+
 }
 
 /* -- secao sobre -- */
@@ -117,6 +121,7 @@ h3, h4 {
 
 /* -- objetivo -- */
 #objetivo {
+	background: #F5F5F5;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: white;
@@ -126,13 +131,21 @@ h3, h4 {
 #qualificacoes {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	color: white;
 	background-color: white;
 }
 
+/* -- experiencias -- */
+#experiencias {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	background-color: #F5F5F5;
+}
+
+
 /* -- rodape -- */
 footer {
-	background: #FFF;
+	background: #E0E0E0;
 	padding: 50px 0px 20px 0px;
 }
 
@@ -158,21 +171,21 @@ h1 {
 /* xs < 768 */
 @media screen and (max-width: 767px) {
 	h1 {
-	    font-size: 50px; 
+	    font-size: 46px; 
   	}
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
     h1 {
-	    font-size: 70px; 
+	    font-size: 50px; 
   	}
 }
 
 /* md */
 @media screen and (min-width: 992px) {
     h1 {
-	    font-size: 80px; 
+	    font-size: 54px; 
   	}
 }
 
@@ -199,8 +212,8 @@ h3{
 
 #rodape h4 {
 	color: #000;
-	font-size: 12px;
-	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 20px;
 }
 
 #sobre h2, #sobre h3 {
