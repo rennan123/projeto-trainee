@@ -5,7 +5,7 @@ html, body, .capa {
 }
 
 body {
-	background: linear-gradient: #FFFFFF;
+	background: linear-gradient(50deg, #FFFFFF, #E0E0E0);
 	background-attachment: fixed;
 	background-position: center;
     background-size: 100% 100%;
@@ -26,19 +26,20 @@ body {
 
 nav.navbar-transparente {
 	padding: 10px 0px;
-	background: rgba(246, 239, 247, 0.6);
+	background: rgba(255, 255, 255, 0.6);
+	border: none;
 }
 
 .navbar-brand{
 	padding: 10px 15px;
 }
 
-.navbar-inverse .navbar-nav>li>a, footer .nav a {
+.navbar-default .navbar-nav>li>a, footer .nav a {
 	color: black;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
-	color: #9bf0e1;
+.navbar-default .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #757575;
 	background: none;
 }
 
@@ -60,7 +61,7 @@ h1 {
     letter-spacing: -2.5px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
     font-weight: 700;
     color: #424242;
 }
@@ -83,7 +84,7 @@ h3, h4 {
     line-height: 40px;
 }
 
-.h4, .h5, .h6, h4, h5, h6 {
+.h4, .h6, h4, h6 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -108,20 +109,21 @@ h3, h4 {
 }
 
 .foto {
+	padding-left: 75px;
+	align-self: center;
 	vertical-align: middle;
 
 }
 
 /* -- secao sobre -- */
 #sobre {
-	background: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
 /* -- objetivo -- */
 #objetivo {
-	background: #F5F5F5;
+	background: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: white;
@@ -129,9 +131,9 @@ h3, h4 {
 
 /* -- qualificações -- */
 #qualificacoes {
+	background-color: #F5F5F5;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: white;
 }
 
 /* -- experiencias -- */
@@ -139,7 +141,7 @@ h3, h4 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: white;
-	background-color: #F5F5F5;
+	background-color: white;
 }
 
 
@@ -156,6 +158,12 @@ footer {
 .footer-iconImg:hover {
     opacity: .8;
     transition: opacity .2s;
+}
+
+.agradecimento {
+    background: #212121;
+    text-align: center;
+    color: white;
 }
 
 /* ========================= Tipografia ======================== */
