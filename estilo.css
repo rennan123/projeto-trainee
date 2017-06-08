@@ -109,10 +109,7 @@ h3, h4 {
 }
 
 .foto {
-	padding-left: 75px;
-	align-self: center;
-	vertical-align: middle;
-
+	margin: 20px 40px;
 }
 
 /* -- secao sobre -- */
@@ -237,4 +234,8 @@ h3{
 
 #qualificacoes h3 {
 	color: #9bf0e1;
+}
+
+#s2 {
+	color: red;
 }
