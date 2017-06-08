@@ -27,7 +27,6 @@ body {
 nav.navbar-transparente {
 	padding: 10px 0px;
 	background: rgba(255, 255, 255, 0.6);
-	border: none;
 }
 
 .navbar-brand{
@@ -36,10 +35,11 @@ nav.navbar-transparente {
 
 .navbar-default .navbar-nav>li>a, footer .nav a {
 	color: black;
+	font-size: 16px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, footer .nav a:hover {
-	color: #757575;
+	color: #ef173b;
 	background: none;
 }
 
@@ -131,9 +131,9 @@ h3, h4 {
 
 /* -- qualificações -- */
 #qualificacoes {
-	background-color: #F5F5F5;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	transition-delay: 0.3;
 }
 
 /* -- experiencias -- */
@@ -144,11 +144,18 @@ h3, h4 {
 	background-color: white;
 }
 
+/* -- curiosidades -- */
+#curiosidades {
+	padding-bottom: 40px;
+	color: white;
+}
+
+
 
 /* -- rodape -- */
 footer {
 	background: #E0E0E0;
-	padding: 50px 0px 20px 0px;
+	padding: 30px 0px 20px 0px;
 }
 
 .item-rede-social{
