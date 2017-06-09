@@ -84,7 +84,7 @@ h3, h4 {
     line-height: 40px;
 }
 
-.h4, .h6, h4, h6 {
+.h4, h4 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -103,13 +103,12 @@ h3, h4 {
 .texto {
 	padding-top: 50px;
 	text-align: center;
-	color: black;
 	display: table-cell;
 	vertical-align: middle;
 }
 
 .foto {
-	margin: 20px 40px;
+	margin: 40px;
 }
 
 /* -- secao sobre -- */
