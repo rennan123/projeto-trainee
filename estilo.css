@@ -12,7 +12,7 @@ nav.navbar-transparente {
 }
 
 .navbar-default .navbar-brand {
-	margin-left: 40px;
+	margin-left: 30px;
 	font-size: 16px;
     color: black;
 }
@@ -72,6 +72,7 @@ nav.navbar-transparente {
 	font-size: 1.2em;
 	font-weight: 200;
 }
+
 .page-section p.lead {
 	font-size: 1.8em;
 }
@@ -94,21 +95,7 @@ nav.navbar-transparente {
 	min-height: 200px;	
 }
 .page-section#curiosidades {
-}
-
-.back-to-top {
-	display: inline-block;
-	clear: both;
-	background: #fff;
-	color: #333;
-	padding: 0 10px 5px;
-	margin: 20px 0 0;
-	text-shadow: none;
-}
-.back-to-top:hover {
-	background: #333;
-	color: #fff;
-	text-decoration: none;
+	max-height: 700px;
 }
 
 @media (min-width: 768px) {
@@ -135,7 +122,6 @@ nav.navbar-transparente {
 /* -- rodape -- */
 .rodape {
 	width: 100%;
-	min-height: 200px;
 	padding: 50px 0;
 }
 
@@ -190,10 +176,6 @@ section > div {
 	float: left;
 }
 
-section img {
-	margin-top: 20px;
-}
-
 section {
 	max-width: 800px;
 	margin: 100px auto;
@@ -212,12 +194,23 @@ section {
 	transform: translate3d(0,0,0);
 }
 
+/* curiosidades */
+
 .curiosidades {
-	padding-top: 100px;
-	width: 20%;
+	align-items: center;
+	width: 100%;
 }
 
-.curiosidades-texto p {
-	width: 550px;
-	padding-bottom: 40px;
+.curiosidades h2 {
+	font-family: Industry, monospace;
+	font-size: 3em;
+	font-weight: 900;
+	color: #424242;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.curiosidades p.caption {
+	font-size: 20px;
+	color: #424242;
+	text-shadow: 1px 1px 1px #fff;
 }
