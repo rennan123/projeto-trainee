@@ -1,154 +1,149 @@
-/* ========================= layout ======================== */
-html, body, .capa {
-	height: 100%;
-	overflow: auto;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Industry, monospace;
 }
 
-body {
-	background: linear-gradient(50deg, #FFFFFF, #E0E0E0);
-	background-attachment: fixed;
-	background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-	font-family: PT Serif,serif;
-	overflow-x: hidden;
-}
-
-/* -- Barra de navegação -- */
-.img-logo {
-	height: 34px;
-	width: 200px;
-	display: block;
-	background: url('imagens/logo.png') no-repeat;
-	background-size: contain;
-	color: transparent;
-}
+/* barra de navegação */
 
 nav.navbar-transparente {
 	padding: 10px 0px;
 	background: rgba(255, 255, 255, 0.6);
 }
 
-.navbar-brand{
-	padding: 10px 15px;
+.navbar-default .navbar-brand {
+	margin-left: 40px;
+	font-size: 16px;
+    color: black;
+}
+.navbar-default .navbar-brand>a:hover {
+	color: #ef173b;
 }
 
 .navbar-default .navbar-nav>li>a, footer .nav a {
-	color: black;
 	font-size: 16px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, footer .nav a:hover {
-	color: #ef173b;
 	background: none;
+	color: #ef173b;
 }
 
-/* -- Imagem de capa -- */
-.capa {
-	padding-top: 100px;
-	display: table;
-	width: 100%;
-}
-
-h1 {
-    display: block;
-    font-size: 2em;
-    -webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
-    letter-spacing: -2.5px;
-}
-
-h1, h2, h3, h4 {
-    font-weight: 700;
-    color: #424242;
-}
-
-h4 {
-    font-size: 28px;
-    font-weight: 400;
-}
-
-h4 {
-     display: block;
-    -webkit-margin-before: 1.33em;
-    -webkit-margin-after: 1.33em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-}
-
-h3, h4 {
-    letter-spacing: -1px;
-    line-height: 40px;
-}
-
-.h4, h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.about {
-    min-height: 70vh;
-    margin-top: 20px;
-}
-
-.texto-capa {
-	text-align: center;
-	color: black;
-	display: table-cell;
-	vertical-align: middle;
-}
-.texto {
-	padding-top: 50px;
-	text-align: center;
-	display: table-cell;
-	vertical-align: middle;
-}
+/* sessão inicial */
 
 .foto {
-	margin: 40px;
+	padding-top: 50px;
 }
 
-/* -- secao sobre -- */
-#sobre {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-/* -- objetivo -- */
-#objetivo {
-	background: white;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: white;
-}
-
-/* -- qualificações -- */
-#qualificacoes {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	transition-delay: 0.3;
-}
-
-/* -- experiencias -- */
-#experiencias {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: white;
-	background-color: white;
-}
-
-/* -- curiosidades -- */
-#curiosidades {
-	padding-bottom: 40px;
-	color: white;
+.texto {
+	padding-top: 50px;
 }
 
 
+/* sections */
+.page-section {
+	width: 100%;
+	padding: 50px 0;
+}
+
+.page-section h1 {
+	font-family: Industry, monospace;
+	font-size: 4em;
+	margin: 50px 0;
+	text-align: center;
+}
+.page-section h2 {
+	font-family: Industry, monospace;
+	font-size: 3em;
+	padding: 20px;
+	font-weight: 900;
+	color: #424242;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.page-section h3 {
+	font-family: Industry, monospace;
+	text-align: center;
+	color: #424242;
+}
+
+.page-section p {
+	font-family: Industry, monospace;
+	font-size: 1.2em;
+	font-weight: 200;
+}
+.page-section p.lead {
+	font-size: 1.8em;
+}
+.page-section p.caption {
+	font-size: 20px;
+	color: #424242;
+	text-shadow: 1px 1px 1px #fff;
+}
+.page-section.intro {
+	min-height: 700px;
+	padding-top: 100px;
+}
+.page-section#objetivo {
+	min-height: 200px;
+}
+.page-section#qualificacoes {
+	min-height: 200px;
+}
+.page-section#experiencias {
+	min-height: 200px;	
+}
+.page-section#curiosidades {
+}
+
+.back-to-top {
+	display: inline-block;
+	clear: both;
+	background: #fff;
+	color: #333;
+	padding: 0 10px 5px;
+	margin: 20px 0 0;
+	text-shadow: none;
+}
+.back-to-top:hover {
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+}
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size: 3em;
+	}
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1em;
+		margin: 0 0 20px;
+	}
+}
 
 /* -- rodape -- */
+.rodape {
+	width: 100%;
+	min-height: 200px;
+	padding: 50px 0;
+}
+
+.rodape h4 {
+	font-family: Industry, monospace;
+	color: #424242;
+}
+
 footer {
 	background: #E0E0E0;
 	padding: 30px 0px 20px 0px;
@@ -159,7 +154,7 @@ footer {
 }
 
 .footer-iconImg:hover {
-    opacity: .8;
+    opacity: .7;
     transition: opacity .2s;
 }
 
@@ -169,72 +164,60 @@ footer {
     color: white;
 }
 
-/* ========================= Tipografia ======================== */
-
-h1 {
-	font-weight: 900;
-	letter-spacing: -0.05em;
-	margin-bottom: 50px;
-	color: #424242;
-}
-
-/* Media queries */
-/* xs < 768 */
-@media screen and (max-width: 767px) {
-	h1 {
-	    font-size: 46px; 
-  	}
-}
-
-/* sm */
-@media screen and (min-width: 768px) {
-    h1 {
-	    font-size: 50px; 
-  	}
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-    h1 {
-	    font-size: 54px; 
-  	}
-}
-
-/* lg */
-@media screen and (min-width: 1200px) {
-    h1 {
-	    font-size: 58px;
-  	}
-}
-/* Fim Media queries */
-
-
-h2{
-	font-size: 50px;
-	font-weight: 700;
-	letter-spacing: -0.04em;
-}
-
-h3{
-	font-size: 35px;
-	font-weight: 700;
-	letter-spacing: -0.04em;
-}
-
-#rodape h4 {
-	color: #000;
-	font-size: 22px;
-	line-height: 20px;
-}
-
-#sobre h2, #sobre h3 {
-	color: #424242;
-}
-
-#qualificacoes h3 {
-	color: #9bf0e1;
-}
-
 #s2 {
 	color: red;
+}
+
+/* grids */
+
+section::after, section::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.grid-text {
+	width: calc(60% - 40px);
+}
+
+.grid-img {
+	width: calc(40% - 40px);
+	padding-top: 70px;
+}
+
+section > div {
+	margin: 0 20px;
+	float: left;
+}
+
+section img {
+	margin-top: 20px;
+}
+
+section {
+	max-width: 800px;
+	margin: 100px auto;
+}
+
+/* animação */
+
+.anime {
+	opacity: 0;
+	transform: translate3d(-100px,0,0);
+	transition: .3s;
+}
+
+.anime-start {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+.curiosidades {
+	padding-top: 100px;
+	width: 20%;
+}
+
+.curiosidades-texto p {
+	width: 550px;
+	padding-bottom: 40px;
 }
