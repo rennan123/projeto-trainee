@@ -8,23 +8,25 @@
 
 nav.navbar-transparente {
 	padding: 10px 0px;
-	background: rgba(255, 255, 255, 0.6);
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
 }
 
-.navbar-default .navbar-brand {
+.navbar-inverse .navbar-brand {
 	margin-left: 30px;
 	font-size: 16px;
-    color: black;
+    color: white;
 }
-.navbar-default .navbar-brand>a:hover {
+.navbar-inverse .navbar-header>a:hover {
 	color: #ef173b;
 }
 
-.navbar-default .navbar-nav>li>a, footer .nav a {
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
 	font-size: 16px;
 }
 
-.navbar-default .navbar-nav>li>a:hover, footer .nav a:hover {
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
 	background: none;
 	color: #ef173b;
 }
@@ -38,7 +40,6 @@ nav.navbar-transparente {
 .texto {
 	padding-top: 50px;
 }
-
 
 /* sections */
 .page-section {
@@ -76,27 +77,19 @@ nav.navbar-transparente {
 .page-section p.lead {
 	font-size: 1.8em;
 }
+
 .page-section p.caption {
 	font-size: 20px;
 	color: #424242;
 	text-shadow: 1px 1px 1px #fff;
 }
+
 .page-section.intro {
 	min-height: 700px;
 	padding-top: 100px;
 }
-.page-section#objetivo {
-	min-height: 200px;
-}
-.page-section#qualificacoes {
-	min-height: 200px;
-}
-.page-section#experiencias {
-	min-height: 200px;	
-}
-.page-section#curiosidades {
-	max-height: 700px;
-}
+
+/* medias */
 
 @media (min-width: 768px) {
 	.header .navbar-brand {
@@ -106,6 +99,7 @@ nav.navbar-transparente {
 		float: right;
 	}
 }
+
 @media (max-width: 480px) {
 	.page-section h1 {
 		font-size: 3em;
