@@ -8,7 +8,7 @@
 
 nav.navbar-transparente {
 	padding: 10px 0px;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.8);
 	border: none;
 }
 
@@ -17,6 +17,7 @@ nav.navbar-transparente {
 	font-size: 16px;
     color: white;
 }
+
 .navbar-inverse .navbar-header>a:hover {
 	color: #ef173b;
 }
@@ -31,28 +32,29 @@ nav.navbar-transparente {
 	color: #ef173b;
 }
 
-/* sessão inicial */
+/* sobre */
 
 .foto {
-	padding-top: 50px;
+	padding-top: 150px;
 }
 
 .texto {
-	padding-top: 50px;
+	padding-left: 50px;
 }
 
 /* sections */
 .page-section {
 	width: 100%;
-	padding: 50px 0;
+	padding: 50px 0 0 0;
 }
 
 .page-section h1 {
+	max-width: 800px;
 	font-family: Industry, monospace;
 	font-size: 4em;
-	margin: 50px 0;
-	text-align: center;
+	margin: 110px auto;
 }
+
 .page-section h2 {
 	font-family: Industry, monospace;
 	font-size: 3em;
@@ -81,11 +83,10 @@ nav.navbar-transparente {
 .page-section p.caption {
 	font-size: 20px;
 	color: #424242;
-	text-shadow: 1px 1px 1px #fff;
 }
 
 .page-section.intro {
-	min-height: 700px;
+	min-height: 600px;
 	padding-top: 100px;
 }
 
@@ -162,7 +163,6 @@ section::after, section::before {
 
 .grid-img {
 	width: calc(40% - 40px);
-	padding-top: 70px;
 }
 
 section > div {
@@ -205,5 +205,23 @@ section {
 .curiosidades p.caption {
 	font-size: 20px;
 	color: #424242;
-	text-shadow: 1px 1px 1px #fff;
+}
+
+.img-curi {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+/* icones */
+
+.exp {
+	padding-top: 100px;
+}
+
+.quali {
+	padding-top: 150px;
+}
+
+.obj {
+	padding-top: 100px;
 }
