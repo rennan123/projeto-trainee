@@ -44,6 +44,7 @@ nav.navbar-transparente {
 .page-section {
 	width: 100%;
 	padding: 50px 0 0 0;
+	min-height: 700px;
 }
 
 .page-section h1 {
@@ -84,7 +85,7 @@ nav.navbar-transparente {
 }
 
 .page-section.intro {
-	min-height: 600px;
+	min-height: 700px;
 	padding-top: 100px;
 }
 
@@ -176,7 +177,6 @@ section {
 }
 
 /* animação */
-
 .anime {
 	opacity: 0;
 	transform: translate3d(-100px,0,0);
@@ -189,7 +189,6 @@ section {
 }
 
 /* curiosidades */
-
 .curiosidades {
 	align-items: center;
 }
@@ -213,7 +212,6 @@ section {
 }
 
 /* icones */
-
 .exp {
 	padding-top: 100px;
 }
